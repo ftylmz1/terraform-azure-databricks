@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  terraform-base:
+    build: 
+      context: .
+    image: terraform-azure-databricks-base
+    env_file:
+     - env/dev.env
+    volumes:
+      - /mnt/c/Users/Fuat_Yilmaz/terraform/terraform-base:/terraform-base
